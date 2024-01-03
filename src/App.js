@@ -1,22 +1,34 @@
-import logo from './logo.svg';
+import Hinh from './Hinh.svg';
 import './App.css';
-
+const styles = {
+  headerstyle: {
+    color: "#5BBD2B"
+  },
+  H2Style: {
+    color: "#79378B"
+  },
+  ListStyle:{
+    color:"#363636"
+  }
+}
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <img src={Hinh} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <h1 style = {styles.headerstyle} >"HAPPY NEW YEAR 2024"</h1>
+          <h2 style = {styles.H2Style} >GOALS</h2>
+          <div style = {styles.ListStyle}>
+            <div> HSK3 </div>
+            <div> Tech intership in AUS </div>
+            <div><a href="https://www.austechcomp.com/" target="_blank" > Take a tech competion</a></div>
+            <div>Change rental area</div>
+            <div>Create a business connecting AUS and VN</div>
+            
+          </div>
+
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
