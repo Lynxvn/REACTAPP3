@@ -1,7 +1,7 @@
 import Hinh from './Hinh.svg';
 import './App.css';
 import Add from './Add/Add.js';
-
+import QuarterGoal2024 from './Monthly/QuarterGoal2024.js';
 function App() {
   return (
     <div className="App">
@@ -9,6 +9,7 @@ function App() {
         <img src={Hinh} className="App-logo" alt="logo" />       
         {/* Import function vào file main sẽ là <_Tên file_/> khác với đóng tag </_tên tag_>*/}
         <Add/>
+        <QuarterGoal2024/>
         </header>
     </div>
   );
@@ -17,8 +18,7 @@ function App() {
 export default App;
 // home work :
 
-// create a folder name Monthly 
-//  create content 
+// create a folder name Monthly create content 
 // : Monthly/Quarter Goal
 
 // noidung ..

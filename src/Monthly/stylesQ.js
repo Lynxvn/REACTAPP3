@@ -1,23 +1,23 @@
-const styles = {
+const stylesQ = {
     headerstyle: {
         color: "#5BBD2B",
         backgroundcolor: "#f5f4f4"
     },
     H2Style: {
-        color: "#79378B"
+        color: "#00CCFF"
     },
     ListStyle: {
-        color: "#3cb371",
+        color: "#3399FF",
         fontsize: "border"
     },
     img: {
-        opacity: "0.5",
-        width:"300",
-        height:"600"
+        opacity: "0.3",
+        width:600,
+        height:600
 }
 }
 
 
 
 
-export default styles
+export default stylesQ
