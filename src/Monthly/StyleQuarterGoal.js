@@ -1,6 +1,10 @@
 const styles = {
     headerstyle: {
+        color: "#5BBD2B",
         backgroundcolor: "#f5f4f4"
+    },
+    H2Style: {
+        color: "#79378B"
     },
     ListStyle: {
         color: "#3cb371",
