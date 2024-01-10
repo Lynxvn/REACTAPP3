@@ -17,7 +17,8 @@ function App() {
 export default App;
 // home work :
 
-// create a folder name Monthly create content 
+// create a folder name Monthly 
+//  create content 
 // : Monthly/Quarter Goal
 
 // noidung ..
