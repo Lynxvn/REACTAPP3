@@ -1,0 +1,22 @@
+.TTS1 {
+    text-align:  center;
+    border: 2px;
+    background-color: red;
+    border-radius: 4px;
+    border-width: 20px;
+    display: inline-flex;
+}
+
+.BIS{
+    text-align:  center;
+}
+
+.MAPV{
+    text-align:  center;
+}
+.BSSI{
+    text-align:  center;
+}
+.FMS{
+    text-align:  center;
+}

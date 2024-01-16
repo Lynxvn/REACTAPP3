@@ -1,17 +1,25 @@
+import Test from "./Test/Test.js";
 import Hinh from './Hinh.svg';
 import './App.css';
 import Add from './Add/Add.js';
 import QuarterGoal2024 from './Monthly/QuarterGoal2024.js';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={Hinh} className="App-logo" alt="logo" />       
-        {/* Import function vào file main sẽ là <_Tên file_/> khác với đóng tag </_tên tag_>*/}
-        <Add/>
-        <QuarterGoal2024/>
+    <>
+      <div className="App">
+        <header className="App-header">
+          <img src={Hinh} className="App-logo" alt="logo" />
+          {/* Import function vào file main sẽ là <_Tên file_/> khác với đóng tag </_tên tag_>*/}
+          <Add />
+          <QuarterGoal2024 />
         </header>
-    </div>
+
+      </div>
+      <div>
+        <Test />
+      </div>
+
+    </>
   );
 }
 
@@ -32,10 +40,10 @@ export default App;
 //       color : #Hex number , RGB
 //       border styles. 
 // image : width / height
-<img src="https://github.com/selenalee123/Netflix/blob/main/assets/demo/Screenshot_1617107541.png?raw=true" width="300" height="600"/>
+<img src="https://github.com/selenalee123/Netflix/blob/main/assets/demo/Screenshot_1617107541.png?raw=true" width="300" height="600" />
 
 // .. READ ME 
-      // .. structure cua js /css 
+// .. structure cua js /css 
 
 
 
