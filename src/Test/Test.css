@@ -1,22 +1,95 @@
+.Total {
+display: flex;  /* ĐỂ control thuộc tính con  */
+border-collapse: separate;
+border-spacing: 60px 60px;
+background-color:  rgba(241, 240, 240, 0.808);
+
+flex-direction: column;
+}
+
 .TTS1 {
-    text-align:  center;
-    border: 2px;
-    background-color: red;
-    border-radius: 4px;
-    border-width: 20px;
+    /* text-align: center;
+    border-style: solid;
+    border-width: 5px; */
+    background-color: rgba(255, 0, 0, 0.393);
+    /* border-radius: 40px;
     display: inline-flex;
+    margin: 20px; */
+    color: black
+    
 }
 
 .BIS{
-    text-align:  center;
+    /* text-align:  center;
+    border-style: solid;
+    border-width: 5px; */
+    background-color: rgba(255, 0, 0, 0.408);
+    /* border-radius: 40px;
+    display: inline-flex;
+    margin: 20px; */
 }
 
 .MAPV{
-    text-align:  center;
+    /* text-align:  center;
+    border-style: solid;
+    border-width: 5px; */
+    background-color: rgba(255, 153, 0, 0.536);
+    /* border-radius: 40px;
+    display: inline-flex;
+    margin: 20px; */
 }
 .BSSI{
-    text-align:  center;
+    /* text-align:  center;
+    border-style: solid;
+    border-width: 5px; */
+    background-color: rgba(130, 114, 12, 0.554);
+    /* border-radius: 40px;
+    display: inline-flex;
+    margin: 20px; */
 }
 .FMS{
-    text-align:  center;
+    /* text-align:  center;
+    border-style: solid;
+    border-width: 5px; */
+    background-color: rgba(46, 134, 2, 0.524);
+    /* border-radius: 40px;
+    display: inline-flex;
+    margin: 20px; */
 }
+/* Viết gộp các thuộc tính giống nhau của các tập */
+.BIS,.MAPV,.BSSI,.FMS {
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 40px;
+    display: inline-flex;
+    margin: 20px;
+    color: black;
+    border-color: beige;
+}
+/* restyle button */
+button {
+    border: none;
+    color : inherit
+}
+.Button {
+   text-align:  center;
+    border-width: 5px; 
+    display: inline-flex;
+    margin: 20px;
+    font-size: 200px;
+    border-color: whitesmoke;
+    border-radius: 40px;
+    color:blue;
+}
+/*  đưa chuột vào sẽ đổi thuộc tính tag */
+.BIS:hover { 
+    background-color: pink;
+    font-size: 150%;
+
+}
+
+/* // hover state cho button 
+// click a link on button 
+// change opacity when hover  */
+

@@ -12,11 +12,9 @@ function App() {
           {/* Import function vào file main sẽ là <_Tên file_/> khác với đóng tag </_tên tag_>*/}
           <Add />
           <QuarterGoal2024 />
-        </header>
+          <Test />
 
-      </div>
-      <div>
-        <Test />
+        </header>
       </div>
 
     </>
