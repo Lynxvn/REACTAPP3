@@ -3,8 +3,7 @@ display: flex;  /* ĐỂ control thuộc tính con  */
 border-collapse: separate;
 border-spacing: 60px 60px;
 background-color:  rgba(241, 240, 240, 0.808);
-
-flex-direction: column;
+flex-direction: column; /* setting direction of items in the container */ 
 }
 
 .TTS1 {
@@ -52,8 +51,8 @@ flex-direction: column;
     border-style: solid;
     border-width: 5px; */
     background-color: rgba(46, 134, 2, 0.524);
-    /* border-radius: 40px;
-    display: inline-flex;
+    /* border-radius: 40px; */
+    /* display: inline-flex;
     margin: 20px; */
 }
 /* Viết gộp các thuộc tính giống nhau của các tập */
@@ -72,24 +71,67 @@ button {
     border: none;
     color : inherit
 }
+
+.Buttoncontainer{
+    align-items: center;
+}
 .Button {
-   text-align:  center;
+    text-align:  center;
     border-width: 5px; 
     display: inline-flex;
-    margin: 20px;
-    font-size: 200px;
+    font-size: 100px;
     border-color: whitesmoke;
     border-radius: 40px;
-    color:blue;
+    color:rgba(0, 0, 255, 0.599);
 }
 /*  đưa chuột vào sẽ đổi thuộc tính tag */
 .BIS:hover { 
     background-color: pink;
     font-size: 150%;
+    text-decoration: line-through;
+    /* Gách ngang chữ */
+}
+
+.ButtonThu{
+    text-align:  center;
+    border-width: 5px; 
+    display: inline-flex;
+    margin: auto;
+    font-size: 100px;
+    border-color: whitesmoke;
+    border-radius: 40px;
+    color:rgba(4, 184, 163, 0.903);
+}
+
+.ButtonThu:hover{
+    background-color: pink;
+    font-size: 150%;
+    opacity:0.5;
 
 }
 
-/* // hover state cho button 
-// click a link on button 
-// change opacity when hover  */
 
+@keyframes test{
+    from {left: 0px}
+    to {left: 300px}
+}
+.Day{
+    position: relative;
+    align-items: center;
+    border-style: dotted;
+    color:rgba(2, 112, 99, 0.743);
+    width: 300px;
+    height: 100px;
+    animation: test 5s infinite ;
+}
+
+.Day:hover{
+    background-color: rgba(0, 120, 167, 0.946);
+    font-size: 150%;
+}
+
+/* 
+tạo circle  cho animation same above */
+/* // hover state cho button 
+// click a link on button/div 
+// change opacity when hover  */
