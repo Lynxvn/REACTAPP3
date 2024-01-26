@@ -14,7 +14,7 @@ function Test() {
                 <button className="ButtonThu">TIME</button>
                 <div className="Buttoncontainer">
                 <div className="Day">Day</div>
-                
+                <div className="Time">Time</div>
                 </div>
             </div>
 
