@@ -15,6 +15,7 @@ function Test() {
                 <div className="Buttoncontainer">
                 <div className="Day">Day</div>
                 <div className="Time">Time</div>
+                <div className="Month">Month</div>
                 </div>
             </div>
 
