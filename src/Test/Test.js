@@ -1,4 +1,5 @@
 import "./Test.css"
+// import Hinh from './src/Hinh.svg';
 function Test() {
     return (
         <>
@@ -17,6 +18,9 @@ function Test() {
                 <div className="Time">Time</div>
                 <div className="Month">Month</div>
                 </div>
+                {/* <div>
+                <img src={Hinh} className="Earth" alt="Earth" />
+                </div> */}
             </div>
 
 

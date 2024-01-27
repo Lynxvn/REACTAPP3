@@ -112,8 +112,8 @@ button {
 
 
 @keyframes test{
-    from {left: 0px}
-    to {left: 300px}
+    from {left: 50%}
+    to {left: 100%}
 }
 .Day{
     position: relative;
@@ -132,7 +132,7 @@ button {
 
 @keyframes  Time{
     from { right: 0px}
-    to {right: 300px} 
+    to {right: 400px} 
 }
 .Time {
     position: relative;
@@ -147,8 +147,13 @@ button {
     background-color: aquamarine ;
     font-size:150%
 }
+.Earth{
+
+}
 /* 
 tạo circle  cho animation same above */
 /* // hover state cho button 
 // click a link on button/div 
 // change opacity when hover  */
+/* import hình trái đất + mặt trời
+Tạo đường tròn: Tạo 1 hình vuông => tạo radius 100% => animation  */
