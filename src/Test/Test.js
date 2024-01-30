@@ -1,5 +1,6 @@
-import "./Test.css"
-// import Hinh from './src/Hinh.svg';
+import "./Test.css";
+import Sun from './Sun.svg'
+import Hinh from './Hinh.svg'
 function Test() {
     return (
         <>
@@ -10,19 +11,23 @@ function Test() {
                 <div className="BSSI" >Business Sustainability and Social Impact</div>
                 <div className="FMS" >Future Management Skills</div>
                 <div className="Buttoncontainer">
-                <button className="Button">CLASS</button>
+                    <button className="Button">CLASS</button>
                 </div>
                 <button className="ButtonThu">TIME</button>
                 <div className="Buttoncontainer">
-                <div className="Day">Day</div>
-                <div className="Time">Time</div>
-                <div className="Month">Month</div>
+                    <div className="Day">Day</div>
+                    <div className="Time">Time</div>
                 </div>
-                {/* <div>
-                <img src={Hinh} className="Earth" alt="Earth" />
-                </div> */}
+
             </div>
 
+            <>
+                <div className="Solar">
+                    <img src={Hinh} className="Earth" alt="Earth" />
+                    <img src={Sun} className="Sun" alt="Sun" />
+                </div>
+
+            </>
 
         </>
     )
