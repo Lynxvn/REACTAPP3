@@ -158,8 +158,8 @@ button {
 
     }
 .Sun{ 
-    width: 300px;
-    height: 300px;
+    width: 600px;
+    height: 600px;
 }
 @media (prefers-reduced-motion: no-preference) {
     .Sun {
@@ -171,12 +171,14 @@ button {
    to {transform: rotate(360deg);}
    }
 .Earth{
-    height: 600px;
-    width: 600px ;
+    height: 300px;
+    width: 300px ;
     padding: 700px;
-    top:0px;
+    margin:0;
+   
 
 }
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion */
 @media (prefers-reduced-motion: no-preference) {
     .Earth {
         animation: Earth-spin infinite 50s linear;   
@@ -187,10 +189,44 @@ button {
     to {transform: rotate(360deg);}
 }
 
+
+
+
+.Outline{
+    color: rgb(82, 124, 110);
+    font: bolder;
+    background-color: rgb(119, 192, 168);
+    border-style:dotted;
+    border-radius: 50%;
+    opacity:0.5;
+}
+.Outline:hover {
+    color: rgb(78, 92, 139);
+    font-size: 200%;
+    opacity:1;
+    font-family: "Lucida Console", "Courier New", monospace;
+
+}
+
+
 /* 
 tạo circle  cho animation same above */
+/* import hình trái đất + mặt trời
+Tạo đường tròn: Tạo 1 hình vuông => tạo radius 100% => animation  */
+
 /* // hover state cho button 
 // click a link on button/div 
 // change opacity when hover  */
-/* import hình trái đất + mặt trời
-Tạo đường tròn: Tạo 1 hình vuông => tạo radius 100% => animation  */
+
+/* 
+.p1 {
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  .p2 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .p3 {
+    font-family: "Lucida Console", "Courier New", monospace;
+  } */
