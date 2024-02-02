@@ -154,7 +154,7 @@ button {
 
 .Solar {
     background-color: rgb(187, 227, 218);
-    padding: 700px;
+    padding:900px;
 
     }
 .Sun{ 
@@ -173,15 +173,19 @@ button {
 .Earth{
     height: 300px;
     width: 300px ;
-    padding: 700px;
-    margin:0;
-   
+    position: relative;
+    border-radius: 100%;
+ 
+    
+
+
 
 }
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion */
 @media (prefers-reduced-motion: no-preference) {
     .Earth {
-        animation: Earth-spin infinite 50s linear;   
+        animation: Earth-spin infinite 3s linear, AroundSun infinite 5s linear;
+        border-radius: 200%;
     }
 }
 @keyframes Earth-spin {
@@ -189,8 +193,30 @@ button {
     to {transform: rotate(360deg);}
 }
 
+ /* @media (prefers-reduced-motion: no-preference) {
+    .Earth {
+        animation: AroundSun infinite 30s linear; 
+         
+    }
+} */
 
+@keyframes AroundSun{
+   
+    0%   { left:0px; top: -700px;}
+    15%  {left:900px; top:-700px;}
+    30%  {left:900px; top:500px;}
+    50%  {left:500px; top:400px;}
+    75% { left:0px; top: 400px;}
+    100%  {left:0px; top: -700px;}
 
+}
+
+/* 0%   {background-color:red; left:0px; top: -700px;}
+    25%  {background-color:yellow; left:900px; top:-700px;}
+    50%  {background-color:blue; left:900px; top:500px;}
+    75%  {background-color:green; left:500px; top:400px;}
+    85% {background-color:red; left:0px; top: 400px;}
+    100%  {background-color:red; left:0px; top: -700px;} */
 
 .Outline{
     color: rgb(82, 124, 110);
