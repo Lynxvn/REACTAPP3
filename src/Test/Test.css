@@ -1,9 +1,11 @@
 .Total {
-display: flex;  /* ĐỂ control thuộc tính con  */
-border-collapse: separate;
-border-spacing: 60px 60px;
-background-color:  rgba(241, 240, 240, 0.808);
-flex-direction: column; /* setting direction of items in the container */ 
+    display: flex;
+    /* ĐỂ control thuộc tính con  */
+    border-collapse: separate;
+    border-spacing: 60px 60px;
+    background-color: rgba(241, 240, 240, 0.808);
+    flex-direction: column;
+    /* setting direction of items in the container */
 }
 
 .TTS1 {
@@ -15,10 +17,9 @@ flex-direction: column; /* setting direction of items in the container */
     display: inline-flex;
     margin: 20px; */
     color: black
-    
 }
 
-.BIS{
+.BIS {
     /* text-align:  center;
     border-style: solid;
     border-width: 5px; */
@@ -28,7 +29,7 @@ flex-direction: column; /* setting direction of items in the container */
     margin: 20px; */
 }
 
-.MAPV{
+.MAPV {
     /* text-align:  center;
     border-style: solid;
     border-width: 5px; */
@@ -37,7 +38,8 @@ flex-direction: column; /* setting direction of items in the container */
     display: inline-flex;
     margin: 20px; */
 }
-.BSSI{
+
+.BSSI {
     /* text-align:  center;
     border-style: solid;
     border-width: 5px; */
@@ -46,7 +48,8 @@ flex-direction: column; /* setting direction of items in the container */
     display: inline-flex;
     margin: 20px; */
 }
-.FMS{
+
+.FMS {
     /* text-align:  center;
     border-style: solid;
     border-width: 5px; */
@@ -55,8 +58,12 @@ flex-direction: column; /* setting direction of items in the container */
     /* display: inline-flex;
     margin: 20px; */
 }
+
 /* Viết gộp các thuộc tính giống nhau của các tập */
-.BIS,.MAPV,.BSSI,.FMS {
+.BIS,
+.MAPV,
+.BSSI,
+.FMS {
     text-align: center;
     border-style: solid;
     border-width: 5px;
@@ -66,86 +73,102 @@ flex-direction: column; /* setting direction of items in the container */
     color: black;
     border-color: beige;
 }
+
 /* restyle button */
 button {
     border: none;
-    color : inherit
+    color: inherit
 }
 
-.Buttoncontainer{
+.Buttoncontainer {
     align-items: center;
 }
+
 .Button {
-    text-align:  center;
-    border-width: 5px; 
+    text-align: center;
+    border-width: 5px;
     display: inline-flex;
     font-size: 100px;
     border-color: whitesmoke;
     border-radius: 40px;
-    color:rgba(0, 0, 255, 0.599);
+    color: rgba(0, 0, 255, 0.599);
 }
+
 /*  đưa chuột vào sẽ đổi thuộc tính tag */
-.BIS:hover { 
+.BIS:hover {
     background-color: pink;
     font-size: 150%;
     text-decoration: line-through;
     /* Gách ngang chữ */
 }
 
-.ButtonThu{
-    text-align:  center;
-    border-width: 5px; 
+.ButtonThu {
+    text-align: center;
+    border-width: 5px;
     display: inline-flex;
     margin: auto;
     font-size: 100px;
     border-color: whitesmoke;
     border-radius: 40px;
-    color:rgba(4, 184, 163, 0.903);
+    color: rgba(4, 184, 163, 0.903);
 }
 
-.ButtonThu:hover{
+.ButtonThu:hover {
     background-color: pink;
     font-size: 150%;
-    opacity:0.5;
+    opacity: 0.5;
 
 }
 
 
-@keyframes test{
-    from {left: 50%}
-    to {left: 100%}
+@keyframes test {
+    from {
+        left: 50%
+    }
+
+    to {
+        left: 100%
+    }
 }
-.Day{
+
+.Day {
     position: relative;
     align-items: center;
     border-style: dotted;
-    color:rgba(2, 112, 99, 0.743);
+    color: rgba(2, 112, 99, 0.743);
     width: 300px;
     height: 100px;
-    animation: test 5s infinite ;
+    animation: test 5s infinite;
 }
 
-.Day:hover{
+.Day:hover {
     background-color: rgba(0, 120, 167, 0.946);
     font-size: 150%;
 }
 
-@keyframes  Time{
-    from { right: 0px}
-    to {right: 400px} 
+@keyframes Time {
+    from {
+        right: 0px
+    }
+
+    to {
+        right: 400px
+    }
 }
+
 .Time {
     position: relative;
     align-items: center;
     border-style: dotted;
-    color:rgba(47, 184, 168, 0.743);
+    color: rgba(47, 184, 168, 0.743);
     width: 300px;
     height: 100px;
-    animation: Time 5s infinite ;
+    animation: Time 5s infinite;
 }
-.Time:hover{
-    background-color: aquamarine ;
-    font-size:150%
+
+.Time:hover {
+    background-color: aquamarine;
+    font-size: 150%
 }
 
 
@@ -153,83 +176,106 @@ button {
 
 
 .Solar {
+    width: 1000px;
+    height: 1000px;
+    border-radius: 100%;
     background-color: rgb(187, 227, 218);
-    padding:900px;
+    padding: 500px;
+}
 
-    }
-.Sun{ 
+.Sun {
     width: 600px;
     height: 600px;
+    margin-top: 17%;
+    margin-left: 3%;
+ 
 }
+
 @media (prefers-reduced-motion: no-preference) {
     .Sun {
         animation: Sun-spin infinite 30s linear;
     }
 }
+
 @keyframes Sun-spin {
-   from{ transform: rotate(0deg);}
-   to {transform: rotate(360deg);}
-   }
-.Earth{
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.Earth {
     height: 300px;
-    width: 300px ;
-    position: relative;
-    border-radius: 100%;
- 
-    
-
-
+    width: 300px;
+    margin-top: 16%;
+    margin-left:-15%;
+    position: absolute;
+    padding-left:50%;
 
 }
+
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion */
 @media (prefers-reduced-motion: no-preference) {
     .Earth {
-        animation: Earth-spin infinite 3s linear, AroundSun infinite 5s linear;
-        border-radius: 200%;
+        animation: Earth-spin infinite 3s linear, 
+            AroundSun infinite 5s linear;
+        ;
+       
     }
 }
+
 @keyframes Earth-spin {
-    from{ transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
- /* @media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
     .Earth {
         animation: AroundSun infinite 30s linear; 
          
     }
 } */
 
-@keyframes AroundSun{
-   
-    0%   { left:0px; top: -700px;}
-    15%  {left:900px; top:-700px;}
-    30%  {left:900px; top:500px;}
-    50%  {left:500px; top:400px;}
-    75% { left:0px; top: 400px;}
-    100%  {left:0px; top: -700px;}
+@keyframes AroundSun {
 
+    from {
+        -webkit-transform: rotateZ(360deg)
+    }
+
+    to {
+        -webkit-transform: rotateZ(0deg)
+        /* 0%   { background-color:red;left:0px; top: -700px;}
+    15%  {left:900px; top:-700px;}
+    30%  {background-color:yellow;left:900px; top:500px;}
+    50%  {left:500px; top:400px;}
+    75% { background-color:blue;left:0px; top: 400px;}
+    100%  {left:0px; top: -700px;} */
+
+    }
 }
 
-/* 0%   {background-color:red; left:0px; top: -700px;}
-    25%  {background-color:yellow; left:900px; top:-700px;}
-    50%  {background-color:blue; left:900px; top:500px;}
-    75%  {background-color:green; left:500px; top:400px;}
-    85% {background-color:red; left:0px; top: 400px;}
-    100%  {background-color:red; left:0px; top: -700px;} */
 
-.Outline{
+.Outline {
     color: rgb(82, 124, 110);
     font: bolder;
     background-color: rgb(119, 192, 168);
-    border-style:dotted;
+    border-style: dotted;
     border-radius: 50%;
-    opacity:0.5;
+    opacity: 0.5;
 }
+
 .Outline:hover {
     color: rgb(78, 92, 139);
     font-size: 200%;
-    opacity:1;
+    opacity: 1;
     font-family: "Lucida Console", "Courier New", monospace;
 
 }
